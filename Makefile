@@ -8,11 +8,10 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/arednui
   SECTION:=base
-  CATEGORY:=UI
+  CATEGORY:=Network
   TITLE:=AREDN Angular UI
   URL:=http://www.arednmesh.org/
   MAINTAINER:=Darryl Quinn - K5DLQ <k5dlq@arednmesh.org>
-
 endef
 
 define Package/arednui/description
@@ -20,7 +19,9 @@ define Package/arednui/description
 endef
 
 define Build/Compile
-  ng install
+#!/bin/sh
+  ng build
+fi
 endef
 
 define Package/arednui/install
