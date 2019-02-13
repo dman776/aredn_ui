@@ -19,9 +19,6 @@ define Package/arednui/description
 endef
 
 define Build/Compile
-#!/bin/sh
-  ng build
-fi
 endef
 
 define Package/arednui/install
