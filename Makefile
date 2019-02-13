@@ -21,7 +21,6 @@ endef
 
 define Build/Compile
   ng install
-
 endef
 
 define Package/arednui/install
@@ -29,7 +28,6 @@ define Package/arednui/install
   echo "TODO: install"
   set
   cp $(1)/www/index.html $(1)/www/index.orig
-
 fi
   $(INSTALL_DIR)/dist/aredn-frontend $(1)/www
 endef
