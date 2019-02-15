@@ -47,4 +47,5 @@ fi
 exit 0
 endef
 
-$(eval $(call BuildPackage, arednui))
+# $(eval $(call BuildPackage, arednui))
+$(eval $(call BuildPackage))
