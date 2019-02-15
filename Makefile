@@ -7,7 +7,7 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/arednui
-  SECTION:=base
+  SECTION:=net
   CATEGORY:=Network
   TITLE:=AREDN Angular UI
   URL:=http://www.arednmesh.org/
@@ -47,4 +47,4 @@ fi
 exit 0
 endef
 
-$(eval $(call BuildPackage,arednui))
+$(eval $(call BuildPackage, arednui))
